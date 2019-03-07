@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    disks:
+    not_disks:
       - disk: 1
         letter: D
         name: data
@@ -12,4 +12,6 @@
         letter: T
         name: pizza
   roles:
-    - disk-management
+    - role: disk-management
+      vars:
+        disks: "{{ not_disks }}"

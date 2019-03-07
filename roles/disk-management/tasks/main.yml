@@ -1,0 +1,4 @@
+---
+- name: show value of disks
+  debug:
+    var: disks

@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  vars:
+    disks:
+      - disk: 1
+        letter: D
+        name: data
+      - disk: 2
+        letter: L
+        name: log
+      - disk: 3
+        letter: T
+        name: pizza
+  roles:
+    - disk-management

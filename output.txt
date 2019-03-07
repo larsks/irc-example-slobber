@@ -1,0 +1,30 @@
+
+PLAY [localhost] ******************************************************************************
+
+TASK [Gathering Facts] ************************************************************************
+ok: [localhost]
+
+TASK [disk-management : show value of disks] **************************************************
+ok: [localhost] => {
+    "disks": [
+        {
+            "disk": 1, 
+            "letter": "D", 
+            "name": "data"
+        }, 
+        {
+            "disk": 2, 
+            "letter": "L", 
+            "name": "log"
+        }, 
+        {
+            "disk": 3, 
+            "letter": "T", 
+            "name": "pizza"
+        }
+    ]
+}
+
+PLAY RECAP ************************************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+

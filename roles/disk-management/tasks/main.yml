@@ -1,4 +1,5 @@
 ---
 - name: show value of disks
   debug:
-    var: disks
+    msg: "{{ item.0.letter }}:\\{{ item.1 }}"
+  loop: "{{ disks|subelements('directories') }}"

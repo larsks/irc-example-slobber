@@ -5,11 +5,20 @@
       - disk: 1
         letter: D
         name: data
+        directories:
+          - pepperoni
+          - squash
       - disk: 2
         letter: L
         name: log
+        directories:
+          - potato
+          - pudding
       - disk: 3
         letter: T
         name: pizza
+        directories:
+          - pineapple
+          - sauce
   roles:
     - disk-management
